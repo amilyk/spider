@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 ##加utf格式就能支持中文注释
+#调度器
 
-# 1 调度器
 # 入口URL作为参数爬取页面
 from spider import url_manager, html_downloader, html_parser, html_outputer
 
@@ -25,14 +25,14 @@ class SpiderMain(object):  # 创建类快捷键ctrl+1
                 self.urls.add_new_urls(new_urls)
                 self.outputer.collect_data(new_data)
 
-                if cnt == 1000:
+                if cnt == 3: ##爬取1000个页面就停止，可以自行调整
                     break
                 cnt = cnt + 1
 
-            except:
+            except: #有些页面没有简介
                 print 'craw failed'
 
-        self.outputer.output_html()
+        self.outputer.output_html() #结果保存在当前目录下output.html中
 
 
 if __name__ == "__main__":

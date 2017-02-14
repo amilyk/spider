@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# 网页输出器，保存爬虫结果
 import pandas as pd
 
 class HtmlOutputer(object):

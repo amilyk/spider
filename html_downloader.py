@@ -1,3 +1,5 @@
+# -*- coding: UTF-8 -*-
+# 网页下载器
 import urllib2
 
 

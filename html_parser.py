@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+#网页解析器
+
 import re
 import urlparse
 
